@@ -1,0 +1,119 @@
+html {
+  font-weight: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  color: #001547;
+  font-size: 1rem;
+  padding-bottom: 4.4rem;
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+  padding-top: 3.4rem;
+  background-color: #fff;
+  border-radius: 1rem;
+}
+
+.conteiner {
+  height: 100%;
+  width: 100%;
+  background-color: #BEF2FF;
+  position: relative;
+  text-align: center;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+
+h2 {
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+hr {
+  color: #001547;
+  margin: 0.5rem;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+}
+
+p {
+  padding: 0.2rem;
+  text-align: left;
+  line-height: 1.2rem;
+}
+
+input {
+  text-align: left;
+}
+
+.btn {
+  text-decoration: none;
+  color: #BEF2FF;
+  padding: 0.8rem 1.5rem;
+  background: #001547;
+  border-radius: 0.8rem;
+  display: inline-block;
+  margin: 0rem 0rem -0.5rem 0rem;
+  border: 2px solid transparent;
+  border-color: #BEF2FF;
+}
+.btn__close {
+  text-decoration: none;
+  color: #BEF2FF;
+  padding: 0.5rem 1rem;
+  background: #001547;
+  border-radius: 0.8rem;
+  display: inline-block;
+  margin: 0.5rem 0rem 0.5rem 0rem;
+  border: 2px solid transparent;
+  border-color: #BEF2FF;
+}
+
+.conteiner-btn {
+  display: flex;
+  flex-direction: column;
+  height: 7rem;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+.modal:target {
+  display: flex;
+}
+
+.close {
+  display: inline-block;
+  margin-top: 2rem;
+}/*# sourceMappingURL=style.css.map */

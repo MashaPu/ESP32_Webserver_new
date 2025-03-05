@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>ESP32 Webserver</title>
+  </head>
+  <body>
+    <div class="conteiner">
+      <h1>Главное меню</h1>
+      <hr />
+      <div class="main">
+        <p>Тип станции:</p>
+        <p>Питьевой режим</p>
+      </div>
+      <div class="main">
+        <p>UID:</p>
+        <p>4050ffcd</p>
+      </div>
+      <div class="main">
+        <p>Версия ПО:</p>
+        <p>401</p>
+      </div>
+      <div class="main">
+        <p>Состояние:</p>
+        <p>ВКЛ</p>
+      </div>
+      <div class="main">
+        <p>Ошибок</p>
+        <p>Нет</p>
+      </div>
+      <div class="main">
+        <p>Количество включений насоса:</p>
+        <p>120</p>
+      </div>
+      <div class="main">
+        <p>Процент работы насоса:</p>
+        <p>25</p>
+      </div>
+      <div class="main">
+        <p>Счетчик чистой воды:</p>
+        <p>100</p>
+      </div>
+      <div class="main">
+        <p>Счетчик канализации:</p>
+        <p>100</p>
+      </div>
+      <div class="main">
+        <p>Счетчик входной воды:</p>
+        <p>200</p>
+      </div>
+      <div class="main">
+        <p>Тип АСКУЭ:</p>
+        <p>Нет</p>
+      </div>
+      <div class="conteiner-btn">
+        <a href="#openModal" class="btn">Настройка станции &nbsp></a>
+        <div id="openModal" class="modal">
+          <div class="modal-content">
+            <div class="conteiner">
+              <h2>Настройка станции</h2>
+              <hr/>
+              <div class="main">
+                <p>Тип станции:</p>
+                <select name="pets" id="Питьевой режим">
+                  <option>Питьевой режим</option>
+                  <option>Родник</option>
+                  <option>Тумба комплект</option>
+                  <option>Atoll575</option>
+                  <option>Фонтанчик</option>
+                </select>
+              </div>
+              <div class="main">
+                <p>Состояние:</p>
+                <select name="pets" id="ВКЛ">
+                  <option>ВКЛ</option>
+                  <option>ВЫКЛ</option>
+                </select>
+              </div>
+              <div class="main">
+                <p>Контроль датчика давления</p>
+                <input type="checkbox">
+              </div>
+              <div class="main">
+                <p>Счетчик чистой воды:</p>
+                <div class="conteiner-input">
+                  <input
+                    type="text"
+                    style="padding: 2px"
+                    name="count2"
+                    value="10"
+                    size="5"
+                  />
+                  <input type="submit" value="Ok" />
+                </div>
+              </div>
+              <div class="main">
+                <p>Счетчик канализации:</p>
+                <div class="conteiner-input">
+                  <input
+                    type="text"
+                    style="padding: 2px"
+                    name="count2"
+                    value="10"
+                    size="5"
+                  />
+                  <input type="submit" value="Ok" />
+                </div>
+              </div>
+              <div class="main">
+                <p>Счетчик входной воды:</p>
+                <div class="conteiner-input">
+                  <input
+                    type="text"
+                    style="padding: 2px"
+                    name="count2"
+                    value="10"
+                    size="5"
+                  />
+                  <input type="submit" value="Ok" />
+                </div>
+              </div>
+              <div class="main">
+                <p>
+                  Время работы<br />
+                  дренажного насоса, сек:
+                </p>
+                <div class="conteiner-input">
+                  <input
+                    type="text"
+                    style="padding: 2px"
+                    name="count2"
+                    value="10"
+                    size="5"
+                  />
+                  <input type="submit" value="Ok" />
+                </div>
+              </div>
+              <div class="main">
+                <p>
+                  Время ошибки<br />
+                  дренажного насоса, сек:
+                </p>
+                <div class="conteiner-input">
+                  <input
+                    type="text"
+                    style="padding: 2px"
+                    name="count2"
+                    value="10"
+                    size="5"
+                  />
+                  <input type="submit" value="Ok" />
+                </div>
+              </div>
+              <div class="main">
+                <p>Тип АСКУЭ:</p>
+                <p>Нет АСКУЭ</p>
+              </div>
+              <a href="#" class="btn__close">Выйти в главное меню</a>
+            </div>
+          </div>
+        </div>
+
+        <a href="#openModal_2" class="btn">Состояние входов выходов &nbsp></a>
+        <div id="openModal_2" class="modal">
+          <div class="modal-content">
+            <div class="conteiner">
+                <h2>Состояние входов выходов</h2>
+                <hr />
+                <h2>Входы:</h2>
+                <div class="main">
+                  <p>Сенсор налива (I4):</p>
+                  <p>зажат</p>
+                </div>
+                <div class="main">
+                  <p>Сенсор налива (I4):</p>
+                  <p>не зажат</p>
+                </div>
+                <div class="main">
+                  <p>Сенсор налива (I5):</p>
+                  <p>зажат</p>
+                </div>
+                <div class="main">
+                  <p>Датчик уровня воды (I5):</p>
+                  <p>замкнут</p>
+                </div>
+                <div class="main">
+                  <p>Реле высокого давления (I6):</p>
+                  <p>разомкнуто</p>
+                </div>
+                <div class="main">
+                  <p>Реле сухого хода (I7):</p>
+                  <p>разомкнуто</p>
+                </div>
+                <div class="main">
+                  <p>УФ лампа (I8):</p>
+                  <p>вкл</p>
+                </div>
+                <p>10 бар (9 мА)</p>
+                <div class="main">
+                  <p>TDS:</p>
+                  <p>15</p>
+                </div>
+                <h2>Выходы:</h2>
+                <div class="main">
+                    <p>Входной клапан и насос (O1):</p>
+                    <p>вкл</p>
+                  </div>
+                <div class="main">
+                    <p>Насос высокого давления (O2):</p>
+                    <p>вкл</p>
+                  </div>
+                <div class="main">
+                    <p>Клапан налива (O2):</p>
+                    <p>открыт</p>
+                  </div>
+                <div class="main">
+                    <p>Насос дренажа (O3):</p>
+                    <p>включен</p>
+                  </div>
+                <div class="main">
+                    <p>Клапан налива (O4):</p>
+                    <p>открыт</p>
+                  </div>
+                <a href="#" class="btn__close">Выйти в главное меню</a>
+              </div>
+          </div>
+        </div>
+        <a href="#openModal_3" class="btn">Настройка WIFI и обновление &nbsp></a>
+        <div id="openModal_3" class="modal">
+          <div class="modal-content">
+            <div class="conteiner">
+              <h2>Настройка WIFI и обновление</h2>
+              <hr />
+              <h2>Парметры для подключения к WIFI:</h2>
+              <form method="post">
+                <p>Название сети:</p>
+                <input name="ssid" value="" size="30"/>
+
+              </form>
+              <div class="main">
+                <p>Сенсор налива (I4):</p>
+                <p>зажат</p>
+              </div>
+              <h2>Обновление станции</h2>
+              <a href="#" class="btn__close">Выйти в главное меню</a>
+          </div>
+        </div>
+        </div>
+        <a href="#openModal_4" class="btn">Настройкаооооо станции &nbsp></a>
+        <div id="openModal_4" class="modal">
+          <div class="modal-content">
+            <!--страница-->
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
