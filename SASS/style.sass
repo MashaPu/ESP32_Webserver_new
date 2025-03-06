@@ -42,14 +42,13 @@ hr
 .main
     display: flex
     justify-content: space-between
+ 
         
 p
     padding: .2rem
     text-align: left
     line-height: 1.2rem
-
-input
-     text-align: left   
+ 
 
 .btn
     text-decoration: none
@@ -100,7 +99,41 @@ input
 
 .close
     display: inline-block
-    margin-top: 2rem 
+    margin-top: 2rem
+
+form
+    text-align: left
+
+input
+    appearance: none
+    width: 3.1rem
+    height: 1.5rem
+    background: #d3cdcd
+    border-radius: 3rem
+
+input::before
+    content: ''
+    position: absolute
+    height: 1.3rem 
+    width: 1.3rem
+    background: white
+    border-radius: 3rem
+    margin: .1rem
+
+input:checked
+    background: #001547
+
+input:checked::before
+    translate: 1.6rem
+   
+
+
+
+
+
+
+
+         
 
 
 

@@ -165,7 +165,6 @@
             </div>
           </div>
         </div>
-
         <a href="#openModal_2" class="btn">Состояние входов выходов &nbsp></a>
         <div id="openModal_2" class="modal">
           <div class="modal-content">
@@ -238,23 +237,105 @@
               <h2>Настройка WIFI и обновление</h2>
               <hr />
               <h2>Парметры для подключения к WIFI:</h2>
+              <br />
               <form method="post">
-                <p>Название сети:</p>
-                <input name="ssid" value="" size="30"/>
-
+                <label for="name">Название сети:</label><br>
+                <input type="text" id="name" name="name" value="" size="30"><br>
+                <label for="password">Пароль:</label><br>
+                <input type="text" id="password" name="password" value="" size="30">
+                <input class="submit" type="submit" value="Сохранить"/>
               </form>
-              <div class="main">
-                <p>Сенсор налива (I4):</p>
-                <p>зажат</p>
-              </div>
+              <br />
               <h2>Обновление станции</h2>
+              <br />
+              <div class="main">
+                <form method="post">
+                <label for="password">Версия прошивки:</label><br>
+                <input type="text" id="up_ver" name="up_ver" size="30">
+                <input class="submit" type="submit" value="Обновить"/>
+                </form>
+              </div>
+              <br />
               <a href="#" class="btn__close">Выйти в главное меню</a>
           </div>
         </div>
         </div>
-        <a href="#openModal_4" class="btn">Настройкаооооо станции &nbsp></a>
+        <a href="#openModal_4" class="btn">Конфигурация станции &nbsp></a>
         <div id="openModal_4" class="modal">
           <div class="modal-content">
+            <div class="conteiner">
+              <h2>Конфигурация станции</h2>
+              <hr />
+              <h2>Стоит ручная конфигурация станции</h2>
+              <br />
+              <p>Входы:</p>
+              <div class="main">
+                <p>Сенсор налива</p>
+                <input type="checkbox">
+              </div>
+              <div class="main">
+                <p>Счетчик входной воды</p>
+                <input type="checkbox">
+              </div>
+              <div class="main">
+                <p>Счетчик канализации</p>
+                <input type="checkbox">
+              </div>
+              <div class="main">
+                <p>Счетчик чистой воды</p>
+                <input type="checkbox">
+              </div>
+              <div class="main">
+                <p>Сенсор налива 2 (Фонтан)</p>
+                <input type="checkbox">
+              </div>
+              <div class="main">
+                <p>Датчик уровня дренажа</p>
+                <input type="checkbox">
+              </div>
+              <div class="main">
+                <p>Реле высокого давления</p>
+                <input type="checkbox">
+              </div>
+              <div class="main">
+                <p>Реле сухого хода</p>
+                <input type="checkbox">
+              </div>
+              <div class="main">
+                <p>Датчик УФ</p>
+                <input type="checkbox">
+              </div>
+              <div class="main">
+                <p>Датчик давления</p>
+                <input type="checkbox">
+              </div>
+              <br />
+              <p>Выходы:</p>
+              <div class="main">
+                <p>Насос и входной клапан</p>
+                <input type="checkbox">
+              </div>
+              <div class="main">
+                <p>Дренажный насос</p>
+                <input type="checkbox">
+              </div>
+              <div class="main">
+                <p>Выходной клапан</p>
+                <input type="checkbox">
+              </div>
+              <div class="main">
+                <p>Выходной клапан 2 (Фонтан)</p>
+                <input type="checkbox">
+              </div>
+              <br />
+              <form method='post'>
+                <button class="btn__close" onclick='this.form.submit()' name='save_conf'>Сохранить ручную конфигурацию</button>
+              </form>
+              <form method='post'>
+                <button class="btn__close" onclick='this.form.submit()' name='clear_conf'>Сбросить на автоматическую конфигурацию</button>
+              </form>
+              <br />
+              <a href="#" class="btn__close">Выйти в главное меню</a>
             <!--страница-->
           </div>
         </div>
