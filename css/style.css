@@ -118,7 +118,7 @@ form {
   text-align: left;
 }
 
-input {
+.checkbox {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -128,7 +128,7 @@ input {
   border-radius: 3rem;
 }
 
-input::before {
+.checkbox::before {
   content: "";
   position: absolute;
   height: 1.3rem;
@@ -138,10 +138,10 @@ input::before {
   margin: 0.1rem;
 }
 
-input:checked {
+.checkbox:checked {
   background: #001547;
 }
 
-input:checked::before {
+.checkbox:checked::before {
   translate: 1.6rem;
 }/*# sourceMappingURL=style.css.map */
