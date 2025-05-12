@@ -16,69 +16,79 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  /*box-sizing: border-box;*/
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 300;
+  /*font-family: "Open Sans", sans-serif;*/
+  font-family: Arial;
   color: #001547;
-  font-size: 1rem;
+  font-size: 1.3rem;
+  line-height: 1rem;
   padding-bottom: 4.4rem;
-  padding-left: 1.6rem;
-  padding-right: 1.6rem;
-  padding-top: 3.4rem;
-  background-color: #fff;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1.3rem;
+  background-color: #BEF2FF;
   border-radius: 1rem;
 }
 
 .conteiner {
   height: 100%;
   width: 100%;
-  background-color: #BEF2FF;
+  /*background-color: #BEF2FF;*/
   position: relative;
   text-align: center;
 }
 
 h1 {
-  font-weight: 400;
+  /*font-weight: 400;*/
   font-size: 1.4rem;
 }
 
 h2 {
-  font-weight: 300;
+  /*font-weight: 300;*/
   font-size: 1.2rem;
 }
 
+h3 {
+  font-size: 1.1rem;
+  text-align: left;
+}
+
 hr {
-  color: #001547;
+  color: black;
   margin: 0.5rem;
 }
 
 .main {
   display: flex;
   justify-content: space-between;
+  padding: .4rem;
 }
+
 
 p {
   padding: 0.2rem;
   text-align: left;
-  line-height: 1.2rem;
+  /*line-height: 1.5rem;*/
 }
 
 .btn {
   text-decoration: none;
+  font-size: 1.1rem;
   color: #BEF2FF;
   padding: 0.8rem 1.5rem;
   background: #001547;
   border-radius: 0.8rem;
   display: inline-block;
-  margin: 0rem 0rem -0.5rem 0rem;
-  border: 2px solid transparent;
+ /*margin: 0rem 0rem -0.5rem 0rem;*/
+  border: 4px solid transparent;
   border-color: #BEF2FF;
 }
 .btn__close {
   text-decoration: none;
+  font-size: 1.1rem;
   color: #BEF2FF;
   padding: 0.5rem 1rem;
   background: #001547;
@@ -107,11 +117,17 @@ p {
   background-color: rgba(0, 0, 0, 0.7);
   justify-content: center;
   align-items: center;
+  z-index: 1000;
 }
 
 .modal-content {
-  background-color: white;
-  padding: 2rem;
+  background-color: #BEF2FF;
+  /*margin: 5% auto;*/
+  padding: .8rem;
+  width: 80%;
+  max-width: 60rem;
+  max-height: 80vh;
+  overflow-y: auto;
   border-radius: 0.5rem;
   text-align: center;
 }
@@ -133,10 +149,11 @@ form {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  width: 3.1rem;
+  width: 3rem;
   height: 1.5rem;
   background: #d3cdcd;
   border-radius: 3rem;
+  flex-shrink: 0;
 }
 
 .checkbox::before {
@@ -414,9 +431,9 @@ form {
             <div class="conteiner">
               <h2>Конфигурация станции</h2>
               <hr />
-              <h2>Стоит ручная конфигурация станции</h2>
+              <h3>Стоит ручная конфигурация станции</h3>
               <br />
-              <p>Входы:</p>
+              <h3>Входы:</h3>
               <div class="main">
                 <p>Сенсор налива</p>
                 <input class="checkbox" type="checkbox">
@@ -458,7 +475,7 @@ form {
                 <input class="checkbox" type="checkbox">
               </div>
               <br />
-              <p>Выходы:</p>
+              <h3>Выходы:</h3>
               <div class="main">
                 <p>Насос и входной клапан</p>
                 <input class="checkbox" type="checkbox">
